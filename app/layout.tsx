@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/nav";
 import Footer from "@/components/footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,17 @@ export default function RootLayout({
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-5ZRS84CWHW"
+      />
+      <Script id="gtag">
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-5ZRS84CWHW');');`}
+      </Script>
     </html>
   );
 }
