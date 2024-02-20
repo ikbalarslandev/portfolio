@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const path = usePathname();
@@ -15,11 +16,15 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="flex items-center justify-between sm:justify-center px-4 py-6 bg-cyan-600">
+      <div className="flex items-center justify-between sm:justify-center p-4 bg-cyan-600">
         <Link href="/">
-          <p className="p-2 bg-gray-400 absolute left-5 top-4 sm:hidden">
-            Logo
-          </p>
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={40}
+            height={40}
+            className="cursor-pointer sm:hidden"
+          />
         </Link>
 
         <ul className=" gap-24 hidden sm:flex  ">
