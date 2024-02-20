@@ -1,11 +1,46 @@
+import Image from "next/image";
+import { GrLinkedin } from "react-icons/gr";
+import { FaGithub } from "react-icons/fa";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Hey </h1>
-      <p>
-        Ikbal is here. I&apos;m a javascript developer with a focus on front end
-        web technologies. I use the web to educate, innovate, and create.
-      </p>
+    <main className="flex flex-col h-screen">
+      <Image
+        src="https://preview.redd.it/1sl7nsez7nry.png?width=960&crop=smart&auto=webp&s=7214de5636c1bdaa910f9af5991435394b8a4a29"
+        alt="Picture of the author"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        className="-z-10"
+      />
+
+      <div className=" pt-10 pb-3 flex flex-col items-center ">
+        <Image
+          src="/profile.jpg"
+          alt="Picture of Ikbal Arslan"
+          width={200}
+          height={200}
+          className="bg-gray-300 rounded-full "
+        />
+        <h1 className="text-4xl mt-2 text-white ">Ikbal Arslan</h1>
+        <p className="mt-5 text-white text-xl">Javascript Developer</p>
+      </div>
+      <div className=" bg-zinc-300 py-20 flex flex-col gap-3 items-center px-8  ">
+        <p className="text-xl">Hey 👋</p>
+        <p className="text-lg text-center">
+          Ikbal is here. I&apos;m a javascript developer with a focus on front
+          end web technologies. I use the web to educate, innovate, and create.
+        </p>
+      </div>
+      <div className="flex items-center flex-1 min-h-40  ">
+        <p className="bg-red-900 flex-1 h-full flex items-center justify-center text-white ">
+          <FaGithub className="w-10 h-10 " />
+        </p>
+
+        <p className=" bg-amber-700  flex-1 flex items-center justify-center text-blue-900 h-full">
+          <GrLinkedin className="w-10 h-10 bg-white rounded-md " />
+        </p>
+      </div>
     </main>
   );
 }

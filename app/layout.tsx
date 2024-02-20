@@ -27,7 +27,7 @@ export default function RootLayout({
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
-      <Script
+      {/* <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-5ZRS84CWHW"
       />
@@ -37,7 +37,7 @@ export default function RootLayout({
           gtag('js', new Date());
 
           gtag('config', 'G-5ZRS84CWHW');');`}
-      </Script>
+      </Script> */}
     </html>
   );
 }
