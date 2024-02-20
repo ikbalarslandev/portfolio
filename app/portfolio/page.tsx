@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "My Portfolio",
+  description: "Ikbal Arslan's portfolio of projects.",
+};
+
 const PortfolioPage = () => {
   return (
     <main>
