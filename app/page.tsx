@@ -1,7 +1,11 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>Home</div>
+    <main>
+      <h1>Hey </h1>
+      <p>
+        Ikbal is here. I'm a javascript developer with a focus on front end web
+        technologies. I use the web to educate, innovate, and create.
+      </p>
     </main>
   );
 }

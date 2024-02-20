@@ -27,15 +27,21 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className=" gap-24 hidden sm:flex  ">
-          <li>
-            <Link href="/">Home</Link>
+        <ul className=" gap-24 hidden sm:flex   w-full items-center justify-center ">
+          <li className="finger px-10">
+            <Link className="finger" href="/">
+              Home
+            </Link>
           </li>
-          <li>
-            <Link href="/about">About</Link>
+          <li className="finger px-10">
+            <Link className="finger" href="/about">
+              About
+            </Link>
           </li>
-          <li>
-            <Link href="/portfolio">Portfolio</Link>
+          <li className="finger px-10">
+            <Link className="finger" href="/portfolio">
+              Portfolio
+            </Link>
           </li>
         </ul>
 
@@ -77,20 +83,24 @@ const Navbar = () => {
             isMenuOpen ? "flex" : "hidden"
           }`}
         >
-          <Link onClick={toggleMenu} href="/" className="text-lg text-gray-700">
+          <Link
+            onClick={toggleMenu}
+            href="/"
+            className="text-lg text-gray-700  w-full flex items-center justify-center  "
+          >
             Home
           </Link>
           <Link
             onClick={toggleMenu}
             href="/about"
-            className="text-lg text-gray-700"
+            className="text-lg text-gray-700 w-full flex items-center justify-center "
           >
             About
           </Link>
           <Link
             onClick={toggleMenu}
             href="/portfolio"
-            className="text-lg text-gray-700"
+            className="text-lg text-gray-700 w-full flex items-center justify-center "
           >
             Portfolio
           </Link>
