@@ -21,7 +21,7 @@ const AboutPage = () => {
 
       <div className="flex-1 flex items-center bg-stone-300 sm:h-screen">
         <div className="flex-1  text-center px-20">
-          <p>
+          <p className="sm:text-xl sm:px-10">
             Ikbal Arslan became a paid freelance developer by the age of 19. He
             became well versed with basic HTML, CSS, Wordpress. After high
             school, He went on to enroll in Digital Game Design. while studying

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { GrLinkedin } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,12 +34,20 @@ export default function Home() {
         </p>
       </div>
       <div className=" flex-1  flex min-h-40">
-        <p className="flex-1 bg-red-900 text-white flex items-center justify-center">
-          <FaGithub className="w-10 h-10 " />
-        </p>
-        <div className="flex-1  bg-amber-700  text-blue-900 flex items-center justify-center ">
+        <Link
+          href="https://github.com/ikbalarslann"
+          className="flex-1 bg-red-900 text-white flex items-center justify-center"
+        >
+          <div>
+            <FaGithub className="w-10 h-10 " />
+          </div>
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/muhammed-ikbal-arslan-674656202/"
+          className="flex-1  bg-amber-700  text-blue-900 flex items-center justify-center "
+        >
           <GrLinkedin className="w-10 h-10 bg-white rounded-md " />
-        </div>{" "}
+        </Link>
       </div>
     </main>
   );
