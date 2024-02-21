@@ -22,9 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} flex flex-col  `}>
         <Navbar />
-        <div className="min-h-screen">{children}</div>
+        <div className="flex-1">{children}</div>
+
         <Footer />
       </body>
       <Script

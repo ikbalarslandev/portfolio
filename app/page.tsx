@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen">
+    <main className="flex flex-col min-h-screen">
       <Image
         src="https://preview.redd.it/1sl7nsez7nry.png?width=960&crop=smart&auto=webp&s=7214de5636c1bdaa910f9af5991435394b8a4a29"
         alt="Picture of the author"
@@ -32,15 +32,17 @@ export default function Home() {
           end web technologies. I use the web to educate, innovate, and create.
         </p>
       </div>
-      <div className="flex items-center flex-1 min-h-40  ">
-        <p className="bg-red-900 flex-1 h-full flex items-center justify-center text-white ">
+      <div className=" flex-1  flex min-h-40">
+        <p className="flex-1 bg-red-900 text-white flex items-center justify-center">
           <FaGithub className="w-10 h-10 " />
         </p>
-
-        <p className=" bg-amber-700  flex-1 flex items-center justify-center text-blue-900 h-full">
+        <div className="flex-1  bg-amber-700  text-blue-900 flex items-center justify-center ">
           <GrLinkedin className="w-10 h-10 bg-white rounded-md " />
-        </p>
+        </div>{" "}
       </div>
     </main>
   );
+}
+
+{
 }

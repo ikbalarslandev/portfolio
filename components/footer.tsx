@@ -3,7 +3,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="bg-cyan-600 text-white flex items-center justify-center">
+    <footer className="bg-cyan-600 text-white flex items-center justify-center ">
       <p className="text-sm"> © Ikbal Arslan {year} </p>
     </footer>
   );
